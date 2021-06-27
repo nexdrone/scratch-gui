@@ -46,10 +46,32 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
-import newblocksImage from './s3coder_newblocks/newblocks.png';
-import newblocksInsetImage from './s3coder_newblocks/newblocks-small.png';
+import udltelloImage from './udltello/UDLTello_L.png';
+import udltelloInsetImage from './udltello/UDLTello_S.png';
+import udltelloConnectionIconURL from './udltello/UDLTello_S.svg'
 
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="UDL Tello"
+                description="Name for the 'UDL Tello' extension"
+                id="gui.extension.udltello.name"
+            />
+        ),
+        extensionId: 'udltello',
+        iconURL: udltelloImage,
+        insetIconURL: udltelloInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Telloを操作する"
+                description="Description for the 'UDL Tello' extension"
+                id="gui.extension.udltello.description"
+            />
+        ),
+        featured: true,
+        connectionIconURL: udltelloConnectionIconURL   
+    },
     {
         name: (
             <FormattedMessage
@@ -321,44 +343,4 @@ export default [
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
     },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="New Blocks"
-                description="Name for the 'New Blocks' extension"
-                id="gui.extension.newblocks.name"
-            />
-        ),
-        extensionId: 'newblocks',
-        iconURL: newblocksImage,
-        insetIconURL: newblocksInsetImage,
-        description: (
-            <FormattedMessage
-                defaultMessage="New extension"
-                description="Description for the 'New Blocks' extension"
-                id="gui.extension.newblocks.description"
-            />
-        ),
-        featured: true   
-    },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="UDL Tello"
-                description="Name for the 'UDL Tello' extension"
-                id="gui.extension.udltello.name"
-            />
-        ),
-        extensionId: 'udltello',
-        iconURL: newblocksImage,
-        insetIconURL: newblocksInsetImage,
-        description: (
-            <FormattedMessage
-                defaultMessage="New extension"
-                description="Description for the 'UDL Tello' extension"
-                id="gui.extension.udltello.description"
-            />
-        ),
-        featured: true   
-    }
 ];
