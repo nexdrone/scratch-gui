@@ -342,5 +342,5 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
-    }
+    },
 ];
