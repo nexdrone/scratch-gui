@@ -46,7 +46,32 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import udltelloImage from './udltello/UDLTello_L.png';
+import udltelloInsetImage from './udltello/UDLTello_S.png';
+import udltelloConnectionIconURL from './udltello/UDLTello_S.svg'
+
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="UDL Tello"
+                description="Name for the 'UDL Tello' extension"
+                id="gui.extension.udltello.name"
+            />
+        ),
+        extensionId: 'udltello',
+        iconURL: udltelloImage,
+        insetIconURL: udltelloInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Telloを操作する"
+                description="Description for the 'UDL Tello' extension"
+                id="gui.extension.udltello.description"
+            />
+        ),
+        featured: true,
+        connectionIconURL: udltelloConnectionIconURL   
+    },
     {
         name: (
             <FormattedMessage
