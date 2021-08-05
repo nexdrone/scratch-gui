@@ -50,6 +50,10 @@ import udltelloImage from './udltello/UDLTello_L.png';
 import udltelloInsetImage from './udltello/UDLTello_S.png';
 import udltelloConnectionIconURL from './udltello/UDLTello_S.svg'
 
+import udlcameraarImage from './udlcameraar/UDLCameraAR_L.png';
+import udlcameraarInsetImage from './udlcameraar/UDLCameraAR_S.png';
+import udlcameraarConnectionIconURL from './udlcameraar/UDLCameraAR_S.svg'
+
 export default [
     {
         name: (
@@ -71,6 +75,27 @@ export default [
         ),
         featured: true,
         connectionIconURL: udltelloConnectionIconURL   
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="UDL CameraAR"
+                description="Name for the 'UDL CameraAR' extension"
+                id="gui.extension.udlcameraar.name"
+            />
+        ),
+        extensionId: 'udlcameraar',
+        iconURL: udlcameraarImage,
+        insetIconURL: udlcameraarInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Cameraを利用する"
+                description="Description for the 'UDL CameraAR' extension"
+                id="gui.extension.udlcameraar.description"
+            />
+        ),
+        featured: true,
+        connectionIconURL: udlcameraarConnectionIconURL   
     },
     {
         name: (
